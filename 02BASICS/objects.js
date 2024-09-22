@@ -25,3 +25,9 @@ function insertUser(user) {
     return { name: '', email: '', isActive: true };
 }
 insertUser({ name: '', email: '', isActive: true });
+var myUser = {
+    _id: '123',
+    name: 'Abhishek',
+    email: 'a@a.com',
+    isActive: false,
+};

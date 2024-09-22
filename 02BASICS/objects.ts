@@ -40,4 +40,32 @@ function insertUser(user: User): User{
 }
 insertUser({name:'', email:'', isActive:true})
 
+type UserInfo = {
+    readonly _id: string
+    name: string
+    email: string
+    isActive: boolean
+    creditCardDetails?: string // optional field
+}
+
+let myUser: UserInfo = {
+    _id: '123',
+    name: 'Abhishek',
+    email: 'a@a.com',
+    isActive: false,
+}
+// myUser.email = 'm@m.com'
+// myUser._id = '321' // error
+
+type cardNumber = {
+    cardnumber: string
+}
+type cardDate = {
+    cardDate: string
+}
+
+type cardDetails = cardNumber & cardDate & {
+    cvv: number
+}
+
 export{}
