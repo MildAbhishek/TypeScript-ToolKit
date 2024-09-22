@@ -3,6 +3,7 @@ enum RoomNo {
     MIDDLE, // 1002
     WINDOW, // 1003
 }
+const roomNo = RoomNo.AISLE
 
 enum SeatChoice {
     AISLE = 'aisle',
@@ -10,8 +11,11 @@ enum SeatChoice {
     WINDOW = 'window',
 }
 
-enum SeatChoices {
+// adding cont means it will generate clean js code
+const enum SeatChoices {
     AISLE = 'aisle',
     MIDDLE = 1002,
     WINDOW, // 1003
 }
+
+const seat = SeatChoices.AISLE
